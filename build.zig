@@ -5,7 +5,6 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
 
     const lib_mod = b.createModule(.{
-        .name = "ZigPooling",
         .root_source_file = b.path("src/lib.zig"),
         .target = target,
         .optimize = optimize,
